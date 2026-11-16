@@ -1,0 +1,844 @@
+/* Ciemny motyw B2B TOP E SHOP.
+   Kolory marki (błękit #03a4dc, granat #04628d, akcent #70cad6) zostają
+   na przyciskach akcji. Zdjęcia produktów, flagi i avatary nie są odwracane. */
+
+html.tsh-dark {
+  color-scheme: dark;
+  --ts-canvas: #10151b;
+  --ts-chrome: #151c24;
+  --ts-surface: #1d2732;
+  --ts-surface-2: #26323f;
+  --ts-input: #141b23;
+  --ts-line: #3a4858;
+  --ts-line-soft: #2a3644;
+  --ts-text: #e7eef4;
+  --ts-text-dim: #d5e0ea;
+  --ts-muted: #c5d4e2;
+  --ts-accent: #8adcf3;
+  --ts-accent-deep: #03a4dc;
+  --ts-primary: #04628d;
+  --ts-asset: #70cad6;
+  --ts-success: #3dce55;
+  --ts-amarant: #ee5b93;
+  --ts-danger: #ff6b63;
+  --ts-link: #b7e7fb;
+  --clr-border: #3a4858;
+  background: var(--ts-canvas);
+  scrollbar-color: #3d4e60 var(--ts-canvas);
+}
+
+html.tsh-dark body:not(.bg) {
+  background: var(--ts-canvas) !important;
+  color: var(--ts-text);
+  min-height: 100vh;
+}
+
+html.tsh-dark body.bg {
+  color: var(--ts-text);
+}
+
+html.tsh-dark h1,
+html.tsh-dark h2,
+html.tsh-dark h3,
+html.tsh-dark h4,
+html.tsh-dark h5,
+html.tsh-dark h6,
+html.tsh-dark legend,
+html.tsh-dark .section-header,
+html.tsh-dark .section-header-smaller,
+html.tsh-dark .dark-header,
+html.tsh-dark .group-name,
+html.tsh-dark .main-site-header,
+html.tsh-dark .main-site-header h3,
+html.tsh-dark .news-content,
+html.tsh-dark .news-title,
+html.tsh-dark .news-card-title,
+html.tsh-dark .news-card-info,
+html.tsh-dark .warden-name,
+html.tsh-dark .panel h5,
+html.tsh-dark .panel .h5,
+html.tsh-dark dt,
+html.tsh-dark .text-static {
+  color: var(--ts-text);
+}
+
+html.tsh-dark .section-blue-header,
+html.tsh-dark .blue-color,
+html.tsh-dark .primary,
+html.tsh-dark .primary-color,
+html.tsh-dark .warden-email,
+html.tsh-dark .synch-column,
+html.tsh-dark .required {
+  color: var(--ts-accent);
+}
+
+html.tsh-dark a {
+  color: var(--ts-link);
+}
+
+html.tsh-dark a:hover,
+html.tsh-dark a:focus {
+  color: #c4efff;
+}
+
+/* Paski komunikatów na pulpicie mają własne, nasycone tło. */
+html.tsh-dark .news-ticker,
+html.tsh-dark .news-ticker2,
+html.tsh-dark .news-ticker a,
+html.tsh-dark .news-ticker2 a,
+html.tsh-dark .header-notify > span {
+  color: #fff !important;
+}
+
+/* ——— Ramka: pasek i menu ——— */
+
+html.tsh-dark #main-header-panel,
+html.tsh-dark .navbar,
+html.tsh-dark .navbar-default,
+html.tsh-dark .navbar-fixed-top,
+html.tsh-dark .sticky-top.navbar {
+  background: var(--ts-chrome) !important;
+  border-color: var(--ts-line-soft) !important;
+  box-shadow: inset 0 -1px 0 var(--ts-line-soft);
+}
+
+html.tsh-dark .user-name,
+html.tsh-dark .navbar-inline li a,
+html.tsh-dark .navbar-inline li a:hover,
+html.tsh-dark .navbar-inline li a:focus,
+html.tsh-dark .name,
+html.tsh-dark .basket-section {
+  color: var(--ts-text) !important;
+  background: transparent !important;
+}
+
+html.tsh-dark .top-menu-links .siteMap,
+html.tsh-dark .top-menu-links .siteMap li.active > a,
+html.tsh-dark .top-menu-links .siteMap li a,
+html.tsh-dark .btn-basket,
+html.tsh-dark .btn-chat,
+html.tsh-dark .menu-collapse,
+html.tsh-dark .log-off-icon,
+html.tsh-dark .shopping-basket-container {
+  color: var(--ts-accent) !important;
+}
+
+html.tsh-dark .btn-chat:hover {
+  background: rgba(62, 196, 239, 0.12) !important;
+}
+
+html.tsh-dark .top-menu-links .siteMap > li:not(:last-child),
+html.tsh-dark .user-controls li:not(:last-child),
+html.tsh-dark .links-wrapper li:not(:first-child),
+html.tsh-dark ul.right li {
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .top-menu-links li ul,
+html.tsh-dark .products-list,
+html.tsh-dark .products-list ul,
+html.tsh-dark .dropdown-menu {
+  background: var(--ts-surface) !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45) !important;
+}
+
+html.tsh-dark .top-menu-links .siteMap li ul li,
+html.tsh-dark .dropdown-item,
+html.tsh-dark .dropdown-menu > li > a,
+html.tsh-dark .products-list ul li a {
+  color: var(--ts-text-dim) !important;
+}
+
+html.tsh-dark .top-menu-links .siteMap li ul li a:hover,
+html.tsh-dark .dropdown-menu > li > a:hover,
+html.tsh-dark .dropdown-menu > li > a:focus,
+html.tsh-dark .products-list ul li a:hover {
+  background: rgba(62, 196, 239, 0.12) !important;
+  color: var(--ts-accent) !important;
+}
+
+html.tsh-dark .top-menu-links .siteMap li ul li ul li {
+  background: #182029 !important;
+}
+
+html.tsh-dark .btn-lang,
+html.tsh-dark .btn-adjust {
+  background: var(--ts-surface-2) !important;
+  background-image: none !important;
+  color: var(--ts-accent) !important;
+  border-color: var(--ts-line) !important;
+  text-shadow: none !important;
+}
+
+html.tsh-dark .user-photo,
+html.tsh-dark .warden-avatar,
+html.tsh-dark .discount-avatar {
+  border-color: #4b6072 !important;
+}
+
+html.tsh-dark .offcanvas-sidebar {
+  background: var(--ts-chrome) !important;
+  border-right: 1px solid var(--ts-line-soft);
+}
+
+html.tsh-dark .logo-wrapper {
+  position: relative;
+  display: block;
+  width: 183px;
+  height: 52px;
+  margin: 18px auto 16px;
+  padding: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: none;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+html.tsh-dark .sidebar-nav,
+html.tsh-dark .sidebar-nav.hide-for-mobile,
+html.tsh-dark .sidebar .hide-for-mobile ul ul a,
+html.tsh-dark .sidebar .hide-for-desktop ul ul a {
+  background: transparent !important;
+}
+
+html.tsh-dark .sidebar-nav ul a {
+  color: #d7e1ea;
+}
+
+html.tsh-dark .sidebar-nav ul a:hover,
+html.tsh-dark .sidebar-nav ul a:focus,
+html.tsh-dark .sidebar-nav ul li.active > a {
+  color: var(--ts-accent);
+  background: linear-gradient(90deg, rgba(62, 196, 239, 0.16), transparent 78%);
+  text-decoration: none;
+  box-shadow: inset 3px 0 0 var(--ts-accent);
+}
+
+html.tsh-dark .sidebar-nav ul ul a {
+  background: #10161c !important;
+  color: #c5d2de;
+  border-right-color: transparent;
+}
+
+html.tsh-dark .sidebar-nav ul ul ul a {
+  background: #0c1218 !important;
+}
+
+/* ——— Karty, kafelki, nagłówki sekcji ——— */
+
+html.tsh-dark .panel,
+html.tsh-dark .panel-default,
+html.tsh-dark .bg-white,
+html.tsh-dark .tile,
+html.tsh-dark .businessterms,
+html.tsh-dark .edit-rating,
+html.tsh-dark .well,
+html.tsh-dark .thumbnail,
+html.tsh-dark .list-group-item,
+html.tsh-dark .modal-content,
+html.tsh-dark .popover,
+html.tsh-dark .bootbox .modal-content {
+  background: var(--ts-surface) !important;
+  color: var(--ts-text);
+  border-color: var(--ts-line) !important;
+  box-shadow: none;
+}
+
+html.tsh-dark .tile-primary { background-color: var(--ts-primary) !important; color: #fff; }
+html.tsh-dark .tile-orders { background-color: #0490c4 !important; color: #fff; }
+html.tsh-dark .tile-orders-time { background-color: #5aabb6 !important; color: #fff; }
+html.tsh-dark .admin-dashboard-grid .white-tile {
+  background: var(--ts-surface) !important;
+  color: var(--ts-asset) !important;
+}
+
+html.tsh-dark .panel-heading,
+html.tsh-dark .panel-default > .panel-heading,
+html.tsh-dark .panel-footer,
+html.tsh-dark .invoice-header,
+html.tsh-dark .modal-header,
+html.tsh-dark .modal-footer {
+  background: var(--ts-surface-2) !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .panel-body,
+html.tsh-dark .modal-body {
+  background: transparent;
+  color: var(--ts-text);
+  border-color: var(--ts-line);
+}
+
+html.tsh-dark .panel-primary > .panel-heading {
+  background: #0c4e70 !important;
+  color: #fff !important;
+  border-color: #0c4e70 !important;
+}
+
+html.tsh-dark .accordion-toggle,
+html.tsh-dark .panel-group .panel-default .panel-heading,
+html.tsh-dark .panel-group .panel-default .panel-heading .accordion-toggle,
+html.tsh-dark .panel-group .panel-default .panel-title a,
+html.tsh-dark .panel-group .panel-default .panel-title a:hover,
+html.tsh-dark .panel-group .panel-default .panel-title a:focus {
+  background: transparent !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .panel-group .panel-default .panel-opened .accordion-toggle,
+html.tsh-dark .panel-opened .accordion-toggle {
+  color: var(--ts-accent) !important;
+}
+
+html.tsh-dark .main-site-header,
+html.tsh-dark .section-wrapper,
+html.tsh-dark .search-botder-bottom {
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .tab-content,
+html.tsh-dark .tab-pane {
+  background: transparent !important;
+  color: var(--ts-text);
+}
+
+html.tsh-dark .breadcrumb,
+html.tsh-dark .breadcrumb > li,
+html.tsh-dark .breadcrumb > li a,
+html.tsh-dark .breadcrumb > .active {
+  color: var(--ts-muted) !important;
+  background: transparent !important;
+}
+
+html.tsh-dark .breadcrumb > li + li:before {
+  color: #6d8296;
+}
+
+html.tsh-dark .nav-tabs {
+  background: transparent !important;
+  border-bottom-color: var(--ts-line);
+}
+
+html.tsh-dark .nav-tabs > li > a,
+html.tsh-dark .nav-tabs > li > a:hover,
+html.tsh-dark .nav-tabs > li > a:focus {
+  color: var(--ts-muted);
+  background: transparent !important;
+  border-color: transparent !important;
+}
+
+html.tsh-dark .nav-tabs > li.active > a,
+html.tsh-dark .nav-tabs > li.active > a:hover,
+html.tsh-dark .nav-tabs > li.active > a:focus {
+  color: var(--ts-accent) !important;
+  background: transparent !important;
+  border-bottom: 2px solid var(--ts-accent) !important;
+}
+
+/* ——— Formularze ——— */
+
+html.tsh-dark .form-control,
+html.tsh-dark input.form-control,
+html.tsh-dark select.form-control,
+html.tsh-dark textarea.form-control,
+html.tsh-dark .input-group-addon,
+html.tsh-dark .input-group-text,
+html.tsh-dark .paper-clip {
+  background: var(--ts-input) !important;
+  background-image: none !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+  box-shadow: none !important;
+}
+
+html.tsh-dark .form-control:focus,
+html.tsh-dark select.form-control:focus,
+html.tsh-dark textarea.form-control:focus {
+  border-color: var(--ts-accent) !important;
+  box-shadow: 0 0 0 3px rgba(62, 196, 239, 0.18) !important;
+}
+
+html.tsh-dark .form-control[disabled],
+html.tsh-dark .form-control:disabled,
+html.tsh-dark .form-control[readonly],
+html.tsh-dark fieldset[disabled] .form-control {
+  background: #10161c !important;
+  color: var(--ts-muted) !important;
+}
+
+html.tsh-dark .form-control::placeholder,
+html.tsh-dark input::placeholder,
+html.tsh-dark textarea::placeholder {
+  color: #7f93a6;
+}
+
+html.tsh-dark label,
+html.tsh-dark .control-label,
+html.tsh-dark .form-group label,
+html.tsh-dark .wrap-panel-search .form-group label,
+html.tsh-dark .data-group-label,
+html.tsh-dark .help-block,
+html.tsh-dark .text-muted {
+  color: var(--ts-muted);
+}
+
+html.tsh-dark input:-webkit-autofill,
+html.tsh-dark textarea:-webkit-autofill,
+html.tsh-dark select:-webkit-autofill {
+  -webkit-text-fill-color: var(--ts-text);
+  caret-color: var(--ts-text);
+  box-shadow: 0 0 0 1000px var(--ts-input) inset;
+}
+
+html.tsh-dark input[type="checkbox"],
+html.tsh-dark input[type="radio"] {
+  accent-color: var(--ts-accent-deep);
+}
+
+html.tsh-dark .k-widget,
+html.tsh-dark .k-widget.form-control,
+html.tsh-dark .k-multiselect,
+html.tsh-dark .k-multiselect-wrap,
+html.tsh-dark .k-dropdown-wrap,
+html.tsh-dark .k-picker-wrap,
+html.tsh-dark .k-numeric-wrap,
+html.tsh-dark .k-input,
+html.tsh-dark .k-textbox {
+  background: var(--ts-input) !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+  box-shadow: none !important;
+}
+
+html.tsh-dark .k-popup,
+html.tsh-dark .k-list-container,
+html.tsh-dark .k-calendar,
+html.tsh-dark .k-calendar .k-content,
+html.tsh-dark .k-list,
+html.tsh-dark .k-animation-container .k-list-container {
+  background: var(--ts-surface) !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .k-item,
+html.tsh-dark .k-list > .k-item,
+html.tsh-dark .k-calendar td,
+html.tsh-dark .k-calendar .k-link {
+  color: var(--ts-text-dim) !important;
+  background: transparent;
+}
+
+html.tsh-dark .k-state-hover,
+html.tsh-dark .k-list > .k-state-hover,
+html.tsh-dark .k-state-selected,
+html.tsh-dark .k-state-focused {
+  background: rgba(62, 196, 239, 0.16) !important;
+  color: var(--ts-text) !important;
+  box-shadow: none !important;
+}
+
+html.tsh-dark .chosen-container,
+html.tsh-dark .chosen-container-single .chosen-single,
+html.tsh-dark .chosen-container-multi .chosen-choices,
+html.tsh-dark .chosen-container .chosen-drop,
+html.tsh-dark .chosen-container .chosen-results {
+  background: var(--ts-input) !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+  box-shadow: none !important;
+}
+
+html.tsh-dark .chosen-container .chosen-results li {
+  color: var(--ts-text-dim);
+}
+
+html.tsh-dark .chosen-container .chosen-results li.highlighted {
+  background: rgba(62, 196, 239, 0.18) !important;
+  color: var(--ts-text) !important;
+}
+
+html.tsh-dark .ui-widget-content,
+html.tsh-dark .ui-datepicker,
+html.tsh-dark .ui-menu,
+html.tsh-dark .bootstrap-datetimepicker-widget {
+  background: var(--ts-surface) !important;
+  color: var(--ts-text) !important;
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .ui-state-default,
+html.tsh-dark .ui-widget-header,
+html.tsh-dark .bootstrap-datetimepicker-widget table td,
+html.tsh-dark .bootstrap-datetimepicker-widget table th {
+  background: transparent !important;
+  color: var(--ts-text-dim) !important;
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .ui-state-hover,
+html.tsh-dark .ui-state-active,
+html.tsh-dark .bootstrap-datetimepicker-widget table td.active,
+html.tsh-dark .bootstrap-datetimepicker-widget table td span.active {
+  background: rgba(62, 196, 239, 0.2) !important;
+  color: #fff !important;
+}
+
+/* ——— Przyciski ——— */
+
+html.tsh-dark .btn,
+html.tsh-dark .btn-default,
+html.tsh-dark .btn-primary,
+html.tsh-dark .btn-success,
+html.tsh-dark .btn-info,
+html.tsh-dark .btn-warning,
+html.tsh-dark .btn-danger {
+  background-image: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+}
+
+html.tsh-dark .btn-default {
+  background: var(--ts-surface-2);
+  color: var(--ts-text);
+  border-color: var(--ts-line);
+}
+
+html.tsh-dark .btn-default:hover,
+html.tsh-dark .btn-default:focus {
+  background: #314252;
+  color: #fff;
+  border-color: #4a6074;
+}
+
+html.tsh-dark .btn-primary {
+  background: #0d7eab;
+  border-color: #0d7eab;
+  color: #fff;
+}
+
+html.tsh-dark .btn-primary:hover,
+html.tsh-dark .btn-primary:focus {
+  background: #1494c6;
+  border-color: #1494c6;
+  color: #fff;
+}
+
+html.tsh-dark .btn-success {
+  background: #2f9e44;
+  border-color: #2f9e44;
+  color: #fff;
+}
+
+html.tsh-dark .btn-info {
+  background: #188cae;
+  border-color: #188cae;
+  color: #fff;
+}
+
+html.tsh-dark .btn-warning {
+  background: #d0891d;
+  border-color: #d0891d;
+  color: #1a1204;
+}
+
+html.tsh-dark .btn-danger {
+  background: #d64545;
+  border-color: #d64545;
+  color: #fff;
+}
+
+html.tsh-dark .filter-button,
+html.tsh-dark .filter-button.btn,
+html.tsh-dark .filter-button.btn-default {
+  background: var(--ts-accent-deep) !important;
+  color: #fff !important;
+  border: 0 !important;
+}
+
+html.tsh-dark .filter-button:hover,
+html.tsh-dark .filter-button:focus {
+  background: #188cae !important;
+  color: #fff !important;
+}
+
+html.tsh-dark .button-outline,
+html.tsh-dark .list-outline,
+html.tsh-dark .button-transparent,
+html.tsh-dark .icon-button,
+html.tsh-dark .btn-list-icon,
+html.tsh-dark .btn-basket,
+html.tsh-dark .btn-chat,
+html.tsh-dark .menu-collapse,
+html.tsh-dark .flag-btn {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+html.tsh-dark .button-outline,
+html.tsh-dark .list-outline {
+  border-width: 2px;
+  border-style: solid;
+}
+
+html.tsh-dark .outline-secondary,
+html.tsh-dark a.outline-secondary,
+html.tsh-dark .button-outline.outline-secondary {
+  color: var(--ts-accent) !important;
+  border-color: var(--ts-accent) !important;
+}
+
+html.tsh-dark .outline-success,
+html.tsh-dark a.outline-success {
+  color: #8cf0a4 !important;
+  border-color: var(--ts-success) !important;
+}
+
+html.tsh-dark .outline-amarant,
+html.tsh-dark a.outline-amarant {
+  color: #ff8bb4 !important;
+  border-color: var(--ts-amarant) !important;
+}
+
+html.tsh-dark .outline-primary,
+html.tsh-dark a.outline-primary {
+  color: #9fd4ff !important;
+  border-color: #6eb6e6 !important;
+}
+
+html.tsh-dark .button-outline:hover,
+html.tsh-dark .list-outline:hover,
+html.tsh-dark .icon-button:hover {
+  background: rgba(62, 196, 239, 0.1) !important;
+}
+
+html.tsh-dark .button-outline.disabled,
+html.tsh-dark .btn[disabled],
+html.tsh-dark .btn.disabled {
+  background: #1a232d !important;
+  color: var(--ts-muted) !important;
+  border-color: var(--ts-line) !important;
+  opacity: 1;
+}
+
+html.tsh-dark .filter-button[disabled],
+html.tsh-dark .quantity-button[disabled] {
+  opacity: 0.55;
+}
+
+html.tsh-dark .contrast-button {
+  background: var(--ts-surface-2) !important;
+  color: var(--ts-text) !important;
+}
+
+html.tsh-dark .contrast-button:hover,
+html.tsh-dark .contrast-button:focus {
+  background: #314252 !important;
+  color: #fff !important;
+}
+
+html.tsh-dark .decrement-quantity { background: var(--ts-accent-deep) !important; color: #fff !important; }
+html.tsh-dark .increment-quantity { background: var(--ts-asset) !important; color: #102026 !important; }
+html.tsh-dark .btn-add-to-basket { background: var(--ts-primary) !important; color: #fff !important; }
+
+html.tsh-dark .btn-list-icon { color: var(--ts-muted) !important; }
+html.tsh-dark .btn-list-icon:hover { color: var(--ts-accent) !important; }
+html.tsh-dark .btn-list-icon-delete { color: #ff8d86 !important; }
+html.tsh-dark .btn-list-icon-primary { color: var(--ts-accent) !important; }
+
+/* ——— Tabele katalogu, koszyka i zamówień ——— */
+
+html.tsh-dark .table,
+html.tsh-dark .table-bordered,
+html.tsh-dark .table-responsive,
+html.tsh-dark .gridview,
+html.tsh-dark .prices-table .table {
+  background: transparent !important;
+  color: var(--ts-text);
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .table > thead > tr > th,
+html.tsh-dark .table > tbody > tr > th,
+html.tsh-dark .table > tfoot > tr > th,
+html.tsh-dark .table > thead > tr > td,
+html.tsh-dark .table > tbody > tr > td,
+html.tsh-dark .table > tfoot > tr > td,
+html.tsh-dark .table-bordered > thead > tr > th,
+html.tsh-dark .table-bordered > tbody > tr > td {
+  border-color: var(--ts-line) !important;
+  color: var(--ts-text);
+}
+
+html.tsh-dark thead th:not(:first-child),
+html.tsh-dark tbody td:not(:first-child),
+html.tsh-dark .prices-table .table td:not(:last-child),
+html.tsh-dark .invoice-positions .table tr,
+html.tsh-dark .prices-table .table tr,
+html.tsh-dark .group-child,
+html.tsh-dark .group-parent,
+html.tsh-dark .product-name {
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .table > thead > tr > th,
+html.tsh-dark .prices-table .table th,
+html.tsh-dark .invoice-header,
+html.tsh-dark tfoot,
+html.tsh-dark .table > tfoot > tr > td,
+html.tsh-dark .table > tfoot > tr > th {
+  background: var(--ts-surface-2) !important;
+  color: var(--ts-text) !important;
+}
+
+html.tsh-dark .table th > a,
+html.tsh-dark .table-bordered th a,
+html.tsh-dark .table td:not(.buttons) > a,
+html.tsh-dark .table td:not(.buttons) > a:hover {
+  color: var(--ts-link);
+}
+
+html.tsh-dark .table-striped > tbody > tr:nth-of-type(odd),
+html.tsh-dark .table-striped > tbody > tr:nth-child(odd),
+html.tsh-dark #grid-articles .table > tbody > tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.035) !important;
+}
+
+html.tsh-dark .table-hover > tbody > tr:hover,
+html.tsh-dark .table-hover > tbody > tr:hover > td {
+  background: rgba(62, 196, 239, 0.08) !important;
+}
+
+html.tsh-dark .group-children,
+html.tsh-dark .group-opened {
+  background: #182029 !important;
+}
+
+html.tsh-dark .group-opened .product-name {
+  color: var(--ts-accent);
+}
+
+html.tsh-dark .article-image,
+html.tsh-dark .article img,
+html.tsh-dark td .article-image img,
+html.tsh-dark .news-card-img img,
+html.tsh-dark .products-image img {
+  background: #f7f7f5;
+  border-radius: 4px;
+}
+
+html.tsh-dark .pagination > li {
+  background: var(--ts-surface) !important;
+  border-color: var(--ts-line) !important;
+}
+
+html.tsh-dark .pagination > li > a,
+html.tsh-dark .pagination > li > span,
+html.tsh-dark .pagination > li i {
+  color: var(--ts-text-dim) !important;
+  background: transparent !important;
+}
+
+html.tsh-dark .pagination > li.active,
+html.tsh-dark .pagination > li.active > a,
+html.tsh-dark .pagination > li.active i {
+  background: var(--ts-accent-deep) !important;
+  color: #fff !important;
+  border-color: var(--ts-accent-deep) !important;
+}
+
+html.tsh-dark .gridview .empty,
+html.tsh-dark .gridview .footer,
+html.tsh-dark .gridview .stats {
+  color: var(--ts-muted);
+}
+
+/* ——— Logowanie, okna, drobne kontrolki ——— */
+
+html.tsh-dark body.bg .center-box .panel,
+html.tsh-dark body.bg .panel-primary {
+  background: rgba(16, 21, 27, 0.92) !important;
+  color: var(--ts-text);
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+html.tsh-dark body.bg .panel-primary > .panel-heading {
+  background: transparent !important;
+  color: var(--ts-text) !important;
+}
+
+html.tsh-dark .copy,
+html.tsh-dark a.footer-page-link {
+  color: #fff;
+}
+
+html.tsh-dark .close,
+html.tsh-dark .modal-header .close {
+  color: var(--ts-text);
+  text-shadow: none;
+  opacity: 0.8;
+}
+
+html.tsh-dark .alert-danger {
+  background: #4a1e24;
+  color: #ffd5d8;
+  border-color: #7a3038;
+}
+
+html.tsh-dark .alert-warning {
+  background: #4a3814;
+  color: #ffe7b8;
+  border-color: #7a5c1e;
+}
+
+html.tsh-dark .alert-success,
+html.tsh-dark .alert-info {
+  color: #fff;
+}
+
+html.tsh-dark .field-validation-error,
+html.tsh-dark .validation-summary-errors {
+  color: #ff9b96;
+}
+
+html.tsh-dark input.input-validation-error {
+  border-color: var(--ts-danger) !important;
+}
+
+html.tsh-dark hr {
+  border-color: var(--ts-line);
+}
+
+html.tsh-dark ::selection {
+  background: rgba(62, 196, 239, 0.35);
+  color: #fff;
+}
+
+html.tsh-dark .fancybox-skin,
+html.tsh-dark .fancybox-inner {
+  background: var(--ts-surface) !important;
+  color: var(--ts-text) !important;
+}
+
+html.tsh-dark #toast-container > div {
+  box-shadow: none;
+  opacity: 1;
+}
+
+html.tsh-dark .progress-bar-well {
+  background: #2a3644;
+}
+
+html.tsh-dark .data-group {
+  border-radius: 8px;
+}
+
+html.tsh-dark .data-group:nth-child(even) {
+  background: rgba(255, 255, 255, 0.03);
+}

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "TOP E SHOP — ciemny motyw",
+  "version": "1.0.0",
+  "description": "Ciemny motyw panelu B2B TOP E SHOP: pulpit, katalog, produkt, koszyk i zamówienia.",
+  "permissions": ["storage"],
+  "host_permissions": ["https://b2b.topeshop.pl/*"],
+  "action": {
+    "default_title": "Ciemny motyw TOP E SHOP",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://b2b.topeshop.pl/*"],
+      "js": ["content.js"],
+      "css": ["theme.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
